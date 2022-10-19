@@ -36,12 +36,12 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
             for word in strs:
                 sorte = sorted(word)
                 if lookup_dict.get(str(sorte)) is not None:
-                    lookup_dict[str(sorte)] += ',' + str(word)
+                    lookup_dict[str(sorte)].append(str(word))
                 else:
-                    lookup_dict[str(sorte)] = str(word)
+                    lookup_dict[str(sorte)] = [str(word)]
                     
             for keys in lookup_dict:
-                res.append(lookup_dict.get(keys).split(","))
+                res.append(lookup_dict.get(keys))
             
             return res
 
