@@ -8,3 +8,4 @@ https://github.com/elitekaycy/leetcode-maniac.git
 
 1. [Group anagrams](GroupAnagrams.md) - ***medium***
 2. [Buy and sell stocks](BuyAndSellStock.md) - ***easy***
+3. [Valid Parenthesis](ValidParenthesis.md) - ***easy***
